@@ -82,3 +82,6 @@ app.listen(port,()=>{
 // Đối với các ứng dụng khác, khi chạy xong task, thì node sẽ đưa ta trở lại command line để thực hiện lệnh khác.
 // Nhưng với web server thì khác, node process không bao giờ dừng lại cho đến khi ta dừng nó. Nhiệm vụ của nó khỏi động server và chạy liên tục.
 
+
+// Khi cài đặt nodemon, ta sẽ chạy lệnh : npm install nodemon --save-dev để đưa Nodemon vào devDependencies. Điều đó có nghĩa rằng Nodemon sẽ chỉ phụ thuộc vào Local Machine, và những production environment như  Heroku chỉ install những npm trong "dependencies" và không install các npm trong "devDependencies", điều này tránh Heroku cài đặt Nodemon, cái mà Heroku sẽ không bao giờ đụng tới, và tiết kiệm 1 chút thời gian.
+
